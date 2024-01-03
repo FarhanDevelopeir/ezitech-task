@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "frontend": "cd ezitect-task && npm start",
+    "frontend": "cd frontend-task && npm start",
     "backend": "cd backend-task && npm start",
     "start": "concurrently \"npm run frontend\" \"npm run backend\""
   },
