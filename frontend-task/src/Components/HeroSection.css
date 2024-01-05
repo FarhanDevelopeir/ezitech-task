@@ -3,24 +3,24 @@
         height: 400px;
     }
     .box{
-        left: 25%;
-        top: 35%;
+        left: 16%;
+        top: 30%;
     }
     .color{
  
-        font-size:larger;
+        font-size:25px;
         margin-top: 30px;
     }
 }
 @media (max-width : 350px) {
   
     .box{
-        left: 10%;
-        top: 35%;
+        left: 7%;
+        top: 28%;
     }
     .color{
         
-        font-size: larger;
+        font-size: 22px;
         margin-top: 30px;
     }
    

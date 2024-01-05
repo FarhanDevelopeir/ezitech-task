@@ -1,7 +1,19 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './HeroSection.css'
 
 const HeroSection = () => {
+  const [currentWordIndex, setCurrentWordIndex] = useState(0);
+
+  const wordsArray = ['Web Design', 'Programming', 'Marketing', 'Social Skills'];
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentWordIndex((prevIndex) => (prevIndex + 1) % wordsArray.length);
+    }, 2000); // Adjust the interval duration as needed
+
+    return () => clearInterval(intervalId); // Clear the interval on component unmount
+  }, []);
+  
   return (
     <div className='w-full'>
         <div className='w-full'>
@@ -10,11 +22,13 @@ const HeroSection = () => {
             xl:top-[35%] xl:left-[30%]
              lg:top-[30%] lg:left-[20%]
              md:top-[30%] md:left-[10%]
-             sm:top-[35%] sm:left-[20%]
-             top-[45%] left-[20%]
+             sm:top-[30%] sm:left-[18%]
+             top-[35%] left-[15%]
              m-autonb b
              '>
-                <h1 className='color md:text-5xl text-3xl'>Learn the fundamentals with our <br/>Our Experts in </h1>
+                <h1 className='color font-semibold  md:text-5xl text-3xl'>Learn the fundamentals with  <br/>Our Experts in{' '}
+            <span className='animated-word text-blue-500'>{wordsArray[currentWordIndex]}</span>
+                </h1>
                 <h1 className='md:text-2xl text-xl mt-5 mb-5 hidden sm:block'>Utilize Effective Training to Reach Your Potential!</h1>
                 <div>
 <div class="mb-3 w-[70%] m-auto hidden sm:block">
