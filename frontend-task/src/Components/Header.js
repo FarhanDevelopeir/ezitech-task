@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import './Header.css'
 
 const Header = () => {
   const [openToggle, setOpenToggle] = useState(false)
@@ -34,7 +35,7 @@ const Header = () => {
     </div>
     <div class="hidden lg:flex lg:gap-x-12">
       <div class="relative">
-        <button type="button" class="flex items-center gap-x-1 text-lg font-semibold leading-6 text-white" aria-expanded="false">
+        <button type="button" class="flex items-center gap-x-1 xl:text-lg font-semibold leading-6 text-white" aria-expanded="false">
           HOME
          
         </button>
@@ -44,12 +45,27 @@ const Header = () => {
       </div>
 
       <a href="#" class="text-lg font-semibold leading-6 text-white">ABOUT US</a>
-      <a href="#" class="text-lg font-semibold leading-6 text-white">CERTIFICATIONS</a>
+      <a href="#" className='nav-hover  text-lg font-semibold leading-6 text-white'>CERTIFICATIONS
+      <div className='show-hover p-4 border-blue-500 border-t-4'>
+        <h1>Free Courses</h1>
+        <h1>Onsite Courses</h1>
+      </div>
+      </a>
+      
       <a href="#" class="text-lg font-semibold leading-6 text-white">INTERNSHIPS</a>
       <a href="#" class="text-lg font-semibold leading-6 text-white">SEMINARS</a>
-      <a href="#" class="text-lg font-semibold leading-6 text-white">BONUS</a>
-      <a href="#" class="text-lg font-semibold leading-6 text-white">LOGIN</a>
-
+      <a href="#" className='nav-hover  text-lg font-semibold leading-6 text-white'>BONUS
+      <div className='show-hover p-4 border-blue-500 border-t-4'>
+        <h1>Skills Assignments</h1>
+       
+      </div>
+      </a>
+      <a href="#" className='nav-hover  text-lg font-semibold leading-6 text-white'>LOGIN
+      <div className='show-hover p-4 border-blue-500 border-t-4'>
+        <h1>Intern Portal</h1>
+        <h1>Course Portal</h1>
+      </div>
+      </a>
     </div>
     <div class=" hidden lg:flex lg:w-[10%] lg:justify-between    ">
     <div class="inline-block align-middle  h-[30px] min-h-[1em]  w-0.5 self-stretch  bg-neutral-400 opacity-100 dark:opacity-50"></div>
@@ -92,11 +108,15 @@ class="w-6 h-6">
    <div class="mt-6 flow-root">
      <div class="-my-6 divide-y divide-gray-500/10">
        <div class="space-y-2 py-6">
+       <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-black hover:bg-gray-50">HOME</a>
+
+       <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-black hover:bg-gray-50">ABOUT US</a>
+
          <div class="-mx-3">
            <button
            onClick={keys}
-           type="button" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-white hover:bg-gray-50" aria-controls="disclosure-1" aria-expanded="false">
-             Product
+           type="button" class="flex w-full items-center text-black justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7  hover:bg-gray-50" aria-controls="disclosure-1" aria-expanded="false">
+             CERTIFICATIONS
              
              <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
@@ -105,23 +125,87 @@ class="w-6 h-6">
            
            {openKeys?
            <div class="mt-2 space-y-2" id="disclosure-1">
-           <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-white hover:bg-gray-50">Analytics</a>
-           <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-white hover:bg-gray-50">Engagement</a>
-           <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-white hover:bg-gray-50">Security</a>
-           <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-white hover:bg-gray-50">Integrations</a>
-           <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-white hover:bg-gray-50">Automations</a>
-           <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-white hover:bg-gray-50">Watch demo</a>
-           <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-white hover:bg-gray-50">Contact sales</a>
+           
+           <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-black hover:bg-gray-50">Free Courses</a>
+           <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-black hover:bg-gray-50">Onsite Courses</a>
          </div>
            :''}
          </div>
-         <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-50">Features</a>
-         <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-50">Marketplace</a>
-         <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-50">Company</a>
+         {/* <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-black hover:bg-gray-50">CERTIFICATIONS</a> */}
+         <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-black hover:bg-gray-50">INTERNSHIPS</a>
+         <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-black hover:bg-gray-50">SEMINARS</a>
+         <div class="-mx-3">
+           <button
+           onClick={keys}
+           type="button" class="flex w-full items-center text-black justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7  hover:bg-gray-50" aria-controls="disclosure-1" aria-expanded="false">
+             BONUS
+             
+             <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+               <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+             </svg>
+           </button>
+           
+           {openKeys?
+           <div class="mt-2 space-y-2" id="disclosure-1">
+           
+           <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-black hover:bg-gray-50">Skills Assignments</a>
+           {/* <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-black hover:bg-gray-50">Onsite Courses</a> */}
+         </div>
+           :''}
+         </div>
+         <div class="-mx-3">
+           <button
+           onClick={keys}
+           type="button" class="flex w-full items-center text-black justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7  hover:bg-gray-50" aria-controls="disclosure-1" aria-expanded="false">
+             LOGIN
+             
+             <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+               <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+             </svg>
+           </button>
+           
+           {openKeys?
+           <div class="mt-2 space-y-2" id="disclosure-1">
+           
+           <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-black hover:bg-gray-50">Intern Portal</a>
+           <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-black hover:bg-gray-50">Course Portal</a>
+         </div>
+           :''}
+         </div>
+
+
        </div>
-       <div class="py-6">
-         <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-50">Log in</a>
-       </div>
+       <div>
+<div class="mb-3 w-full m-auto ">
+  <div class="relative mb-4 flex w-full flex-wrap items-stretch border rounded bg-white ">
+    <input
+      type="search"
+      class="relative m-0 -mr-0.5 block  flex-auto rounded-l border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
+      placeholder="Search Courses..."
+      aria-label="Search"
+      aria-describedby="button-addon1" />
+
+   
+    <button
+      class="relative z-[2] flex  items-center hidden sm:block rounded-r bg-primary px-6 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-primary-700 hover:shadow-lg focus:bg-primary-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg"
+      type="button"
+      id="button-addon1"
+      data-te-ripple-init
+      data-te-ripple-color="light">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5 text-black">
+        <path
+          fill-rule="evenodd"
+          d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+          clip-rule="evenodd" />
+      </svg>
+    </button>
+  </div>
+</div>
+                </div>
      </div>
    </div>
  </div>

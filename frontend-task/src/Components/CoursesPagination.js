@@ -118,7 +118,7 @@ const CoursesPagination = () => {
     );
   });
   return (
-    <div className="bg-gray-200">
+    <div className="bg-gray-200 pb-20">
       <h1 className="text-3xl md:text-5xl text-gray-700 text-center pt-10 mb-14">
         Recent Courses
       </h1>
