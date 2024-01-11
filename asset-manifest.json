@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/ezitech-task/static/css/main.0ef44c54.css",
+    "main.js": "/ezitech-task/static/js/main.a81ee2eb.js",
+    "static/js/787.39e7e2b8.chunk.js": "/ezitech-task/static/js/787.39e7e2b8.chunk.js",
+    "static/media/10586.jpg": "/ezitech-task/static/media/10586.5c85b0f72705e0fcfd6a.jpg",
+    "static/media/3503986.jpg": "/ezitech-task/static/media/3503986.a70451e45c2362ed612c.jpg",
+    "static/media/6333204.jpg": "/ezitech-task/static/media/6333204.ee61596067f3a1f229b8.jpg",
+    "index.html": "/ezitech-task/index.html",
+    "main.0ef44c54.css.map": "/ezitech-task/static/css/main.0ef44c54.css.map",
+    "main.a81ee2eb.js.map": "/ezitech-task/static/js/main.a81ee2eb.js.map",
+    "787.39e7e2b8.chunk.js.map": "/ezitech-task/static/js/787.39e7e2b8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0ef44c54.css",
+    "static/js/main.a81ee2eb.js"
+  ]
+}
