@@ -1,4 +1,5 @@
 {
+  "homepage": "http://FarhanDevelopeir.github.io/ezitech-task",
   "name": "ezitech-project",
   "version": "1.0.0",
   "description": "",
@@ -7,12 +8,17 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "frontend": "cd frontend-task && npm start",
     "backend": "cd backend-task && npm start",
-    "start": "concurrently \"npm run frontend\" \"npm run backend\""
+    "start": "concurrently \"npm run frontend\" \"npm run backend\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "concurrently": "^8.2.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
